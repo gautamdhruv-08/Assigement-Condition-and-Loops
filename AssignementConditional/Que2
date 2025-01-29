@@ -1,0 +1,21 @@
+function gradeStudent(marks) {
+    let grade;
+    
+    if (marks > 90) {
+        grade = "A";
+    } else if (marks >= 70 && marks <= 90) {
+        grade = "B";
+    } else if (marks >= 50 && marks < 70) {
+        grade = "C";
+    } else {
+        grade = "F";
+    }
+    
+    console.log(`Marks: ${marks} -> Grade: ${grade}`);
+}
+
+// Test Cases
+gradeStudent(95); // A
+gradeStudent(85); // B
+gradeStudent(60); // C
+gradeStudent(45); // F
